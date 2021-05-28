@@ -1,0 +1,12 @@
+div{
+    width: 50%;
+    height:50px ;
+}
+div:nth-child(1){
+    background-color: coral;
+    
+}
+
+div:nth-child(2){
+    background-color: cornflowerblue;
+}

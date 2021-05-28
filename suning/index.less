@@ -1,0 +1,296 @@
+@import 'common';
+@baseFont:50;
+
+body{
+    width: 15rem;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    min-width: 320px;//最小的手机屏幕尺寸为320px
+    line-height: 1.5;//子元素行高=子元素的字体大小*1.5
+    font-family: Arial, Helvetica,STHeiTi, sans-serif;
+    background-color: #f2f2f2;
+}
+.header{
+   display: flex;
+   position: relative;
+   width: 15rem;
+   height: (90rem / @baseFont);
+   line-height: (90rem / @baseFont);
+   display: inline-block;
+   vertical-align: middle;
+   color: #f7f7f7;
+
+   .header_bg{
+       width: 15rem;
+       height: (90rem / @baseFont);
+       z-index: -1;
+       img{
+           width: 100%;
+           height: 100%;
+       }
+   }
+   .tip{
+       z-index: 2;
+       top: 0;
+       left:(20rem / @baseFont);
+       position: absolute;
+       width: (65rem / @baseFont);
+       img{
+        width: (35rem / @baseFont);
+        height: (33rem / @baseFont);
+    }
+   }
+   .logo{
+    z-index: 2;
+    top: (13rem / @baseFont);
+    left:(65rem / @baseFont);
+       position: absolute;
+       width: (65rem / @baseFont);
+       img{
+           width: (73rem / @baseFont);
+           height: (65rem / @baseFont);
+       }
+   }
+   .tip_content{
+       z-index: 2;
+       top: (4rem / @baseFont);
+       left:(154rem / @baseFont);
+       position: absolute;
+        width: (410rem / @baseFont);
+        font-size: (24rem / @baseFont);
+    }
+    .now_open{
+        z-index: 2;
+       top: (2rem / @baseFont);
+       left:(575rem / @baseFont);
+        position: absolute;
+        width: (65rem / @baseFont);
+        width: (180rem / @baseFont);
+        font-size: (25rem / @baseFont);
+    }
+}
+
+.sn-nav-wrapper{
+    position: relative;
+    width: 15rem;
+    font-size: 28px;
+    .index-nav{
+        height: (180rem / @baseFont);
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .top-type{
+        z-index: 2;
+        width: (36rem / @baseFont);
+        height: (60rem / @baseFont);
+        position: absolute;
+        top:(18rem / @baseFont);
+        left: (33rem / @baseFont);
+        img{
+            width: (36rem / @baseFont);
+            height: (60rem / @baseFont);
+        }
+    }
+    .fixed-type{
+        z-index: 2;
+        width: (390rem / @baseFont);
+        height: (76rem / @baseFont);
+        position: absolute;
+        top: (8rem / @baseFont);
+        left: (187rem / @baseFont);
+        img{
+            width: (390rem / @baseFont);
+            height: (76rem / @baseFont);
+        }
+    }
+    .type{
+        z-index: 2;
+        width: (36rem / @baseFont);
+        height: (60rem / @baseFont);
+        position: absolute;
+        top:(18rem / @baseFont);
+        right: (33rem / @baseFont);
+        img{
+            width: (36rem / @baseFont);
+            height: (60rem / @baseFont);
+        }
+    }
+    .text{
+        position: absolute;
+        width: (700rem / @baseFont);
+        height: (64rem / @baseFont);
+        top:(97rem / @baseFont);
+        left: (23rem / @baseFont);
+        font-size: (26rem / @baseFont);
+        
+        input{
+           
+            width: (634rem / @baseFont);
+            height: (64rem / @baseFont);
+            padding-left: (66rem / @baseFont);
+            border-radius: 44px;
+           
+            position: absolute;
+            border:none;
+        }
+        .imgs{
+            z-index: 1;
+                width: 15rem;
+                height: (30rem / @baseFont);
+                position: absolute;
+                top:(18rem / @baseFont);
+                left: (23rem / @baseFont);
+            img{
+                 position: absolute;
+                 width: (30rem / @baseFont);
+                 height: (30rem / @baseFont);
+            }
+        }
+    }
+}
+
+.index-warp{
+    position: relative;
+    width: 15rem;
+    .warp_a{
+        height: (244rem / @baseFont);
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .warp_b{
+        position: absolute;
+        width: (700rem / @baseFont);
+        height: (230rem / @baseFont);
+        top:(13rem / @baseFont);
+        left: (23rem / @baseFont);
+        img{
+            border-radius: 25px;
+            width: (700rem / @baseFont);
+            height: (230rem / @baseFont);
+        }
+    }
+}
+
+.index-view{
+    width: 15rem;
+    position: relative;
+    height: 258px;
+    // background-color: red;
+    .view-a{
+        position: absolute;
+        width: (250rem / @baseFont);
+        height: (258rem / @baseFont);
+        img{
+            width: (250rem / @baseFont);
+            height: (258rem / @baseFont);
+        }
+    }
+    .view-b{
+        position: absolute;
+        width: (250rem / @baseFont);
+        height: (258rem / @baseFont);
+        left: (250rem / @baseFont);
+        img{
+            width: (250rem / @baseFont);
+            height: (258rem / @baseFont);
+        }
+    }
+    .view-c{
+        position: absolute;
+        width: (250rem / @baseFont);
+        height: (258rem / @baseFont);
+        left: (500rem / @baseFont);
+        img{
+            width: (250rem / @baseFont);
+            height: (258rem / @baseFont);
+        }
+    }
+}
+
+.index-enter{
+    width: 15rem;
+    height: (320rem / @baseFont);
+    // background-color:gray;
+    position: relative;
+    font-size: 21px;
+    div{
+        width: (150rem / @baseFont);
+        height: (142rem / @baseFont);
+        position: relative;
+        float: left;
+    }
+    img{
+        position: absolute;
+        top:(33rem / @baseFont);
+        left: (40rem / @baseFont);
+        width: (84rem / @baseFont);
+        height: (84rem / @baseFont);
+    }
+    p{
+        font-size: (21rem / @baseFont);
+        position: absolute;
+        top:(100rem / @baseFont);
+        left: (40rem / @baseFont);
+    }
+}
+
+.index-lib{
+    width: 15rem;
+    height: (235rem / @baseFont);
+    // background-color: gray;
+    position: relative;
+    .lib-a{
+        position: absolute;
+        width: (373rem / @baseFont);
+        height: (234rem / @baseFont);
+        img{
+            width: (373rem / @baseFont);
+            height: (234rem / @baseFont);
+        }
+    }
+    .lib-b{
+        position: absolute;
+        width: (186rem / @baseFont);
+        height: (234rem / @baseFont);
+        left: (374rem / @baseFont);
+        img{
+            width: (186rem / @baseFont);
+            height: (234rem / @baseFont);
+        }
+    }
+    .lib-c{
+        position: absolute;
+        width: (186rem / @baseFont);
+        height: (234rem / @baseFont);
+        left: (563rem / @baseFont);
+        img{
+            width: (186rem / @baseFont);
+            height: (234rem / @baseFont);
+        }
+    }
+}
+
+.index-miaos{
+    position: relative;
+    width: (702rem / @baseFont);
+    height: (258rem / @baseFont);
+    background-color: gray;
+    margin: 0 auto;
+    .miaos-a{
+        width: (350rem / @baseFont);
+        height: (258rem / @baseFont);
+        background-color: blueviolet;
+    }
+    .miaos-b{
+        width: (350rem / @baseFont);
+        height: (258rem / @baseFont);
+        background-color: blueviolet;
+    }
+}
+

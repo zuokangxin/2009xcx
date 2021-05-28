@@ -1,0 +1,45 @@
+// @color:red;
+@background-color:red;
+@font-size1:15px;
+@font-size11:18px;              
+div:first{
+    // color: @color;
+    background-color: @background-color;
+    width:200px;
+    height: 200px;
+    font-size: @font-size1;
+}
+p{
+    width: 100px;
+    height: 100px;
+    background-color: @background-color;
+    font-size: @font-size11;
+}
+#header{
+    // background-color: @background-color;
+    width: 100px;
+    height: 100px;
+    .nav{
+        height: 50px;
+        font-size: 20px;
+    }
+    a{
+        text-decoration: none;
+        &:hover{
+            color: pink;
+        }
+    }
+
+}
+.sign{
+    background-color: @background-color;
+    height: 50px;
+    &::before{
+        content: '按实际开';
+        color: purple;
+    }
+    &::after{
+        content: '按实际开';
+        color: brown;
+    }
+}

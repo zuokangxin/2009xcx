@@ -1,0 +1,361 @@
+/*公共部分*/
+body{
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: #fff;
+    line-height: 1.5;
+    font-size: 14px;
+    font-family: -apple-system,Helvetica,sans-serif;
+    color: #666;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+/*固定定位小图标*/
+.fixed{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    z-index: 1;
+    position: fixed;
+    top: 130px;
+    right: 0;
+    border-radius: 50px 0px 0px 50px;
+}
+
+.fixed img{
+    width: 30px;
+}
+
+/*顶部*/
+.top ul li{
+    padding: 0;
+    float: left;
+    background-color: #333;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.top ul li:nth-child(1){
+    width: 8%;
+}
+
+.top ul li:nth-child(1) img{
+    width: 10px;
+}
+
+.top ul li:nth-child(2){
+    width: 10%;
+}
+
+.top ul li:nth-child(2) img{
+    width: 35px;
+    vertical-align: middle;
+}
+
+.top ul li:nth-child(3){
+    width: 57%;
+}
+
+.top ul li:nth-child(4){
+    width: 25%;
+    background-color: red;
+}
+
+/*顶部搜索加轮播图*/
+.longbo{
+    width: 100%;
+    height: 187px;
+    background-color: red;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+.longbo ul li{
+    padding: 0;
+    float: left;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+}
+
+.longbo ul li:nth-child(1){
+    width: 15%;
+}
+
+.longbo ul li:nth-child(1) img{
+    width: 20px;
+    vertical-align: middle;
+}
+
+.longbo ul li:nth-child(2){
+    width: 70%;
+}
+
+.longbo ul li:nth-child(2) .inp{
+    width: 100%;
+    height: 30px;
+    border-radius: 50px 50px;
+    background: #fff;
+    margin-top: 5px;
+}
+
+.longbo ul li:nth-child(2) .inp .im1{
+    width: 20px;
+    height: 15px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+.longbo ul li:nth-child(2) .inp span{
+    color: #999;
+    float: left;
+    margin-left: 5px;
+    margin-top: -6px;
+}
+
+.longbo ul li:nth-child(2) .inp input{
+    float: left;
+    margin-top: 6px;
+    margin-left: 6px;
+    border: none;
+}
+
+.longbo ul li:nth-child(3){
+    width: 15%;
+}
+
+.longbo .img{
+    float: left;
+    margin-top: 5px;
+    margin: 0 auto;
+}
+
+.longbo .img img{
+    width: 90%;
+    height: 140px;
+    border-radius: 10px 10px;
+}
+
+/*抢十亿红包雨*/
+.daimg{
+    width: 100%;
+    height: 100px;
+    margin-top: 55px;
+}
+
+.daimg a img{
+    width: 33.3%;
+    height: 100px;
+    float: left;
+}
+
+/*京东超市*/
+.bodyy{
+    width: 100%;
+    height: 160px;
+    margin-top: 5px;
+}
+
+.bodyy ul li{
+    width: 20%;
+    height: 75px;
+    float: left;
+    margin-top: 2px;
+}
+
+.bodyy ul li img{
+    width: 40px;
+}
+
+.bodyy ul li span{
+    font-size: 6px;
+}
+
+/*京东秒杀*/
+.haohuo{
+    width: 100%;
+    height: 130px;
+}
+
+.haohuo .miaosha{
+    width: 100%;
+    height: 20px;
+}
+
+.haohuo .miaosha span{
+    color: #0e0e0e;
+    float: left;
+    margin-left: 10px;
+}
+
+.haohuo .miaosha a{
+    float: right;
+    color: red;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.haohuo ul li{
+    width: 16%;
+    height: 100px;
+    float: left;
+    margin-top: 5px;
+}
+
+.haohuo ul li img{
+    width: 55px;
+    margin-left: 3px;
+}
+.haohuo ul li .span1{
+    margin-left: 7px;
+    color: red;
+}
+
+.haohuo ul li .span2{
+    margin-left: 7px;
+    color: #999999;
+    text-decoration: line-through;
+}
+
+/*换个新机+完美纪念*/
+.wanmei{
+    width: 100%;
+    height: 240px;
+    margin-top: 10px;
+}
+
+.wanmei .wanmei_left{
+    width: 50%;
+    height: 40px;
+    float: left;
+}
+
+.wanmei .wanmei_left h3{
+    color: #0e0e0e;
+    margin-top: 0px;
+    float: left;
+    margin-left: 10px;
+}
+
+.wanmei .wanmei_left span{
+    float: left;
+    margin-top: 25px;
+    font-size: 12px;
+    margin-left: -65px;
+}
+
+.wanmei .wanmei_right{
+    width: 50%;
+    height: 40px;
+    float: left;
+}
+
+.wanmei .wanmei_right h3{
+    color: #0e0e0e;
+    margin-top: 0px;
+    float: left;
+    margin-left: 10px;
+}
+
+.wanmei .wanmei_right span{
+    float: left;
+    margin-top: 25px;
+    font-size: 12px;
+    margin-left: -65px;
+}
+
+.wanmei .wanmei_ul ul li{
+    width: 25%;
+    height: 65px;
+    float: left;
+    margin-top: 10px;
+}
+
+.wanmei .wanmei_ul ul li img{
+    width: 65px;
+    margin-left: 13px;
+}
+
+.wanmei .wanmei_ul ul li h3{
+    margin-top: 0px;
+    color: #0e0e0e;
+}
+
+.wanmei .wanmei_ul ul li h2{
+    font-size: 12px;
+    margin-top: -20px;
+}
+
+/*底部懒加载商品*/
+.buttom{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.buttom ul li{
+    width: 50%;
+    height: 274px;
+    float: left;
+    margin-top: 10px;
+    border-radius: 5px 5px;
+}
+
+.buttom ul li img{
+    border-radius: 5px 5px;
+    width: 177px;
+}
+
+.buttom ul li span{
+    color: #0e0e0e;
+    font-size: 12px;
+}
+
+.buttom ul li p{
+    color: red;
+    margin-top: 0px;
+    font-size: 15px;
+    margin-left: -120px;
+}
+
+.buttom ul li a{
+    float: right;
+    margin-top: -30px;
+    color: #999;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+/*底部*/
+.foot{
+    width: 100%;
+    height: 50px;
+    background: #dddddd;
+    float: left;
+    position: fixed;
+    bottom: 0px;
+}
+
+.foot ul li{
+    width: 20%;
+    float: left;
+}
+
+.foot ul li img{
+    width: 100%;
+    margin-top: -20px;
+}

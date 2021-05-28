@@ -1,0 +1,38 @@
+div:first {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  font-size: 15px;
+}
+p {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  font-size: 18px;
+}
+#header {
+  width: 100px;
+  height: 100px;
+}
+#header .nav {
+  height: 50px;
+  font-size: 20px;
+}
+#header a {
+  text-decoration: none;
+}
+#header a:hover {
+  color: pink;
+}
+.sign {
+  background-color: red;
+  height: 50px;
+}
+.sign::before {
+  content: '按实际开';
+  color: purple;
+}
+.sign::after {
+  content: '按实际开';
+  color: brown;
+}

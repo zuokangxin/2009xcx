@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, itial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>流式布局</title>
+    <style>
+        img:nth-child(2){
+            width: 50px;
+            height: 50px;
+        }
+
+        div:nth-child(1){
+            width: 50px;
+            height: 50px;
+            background: url(./111.jpg) no-repeat;
+        }
+        div:nth-child(2){
+            width: 50px;
+            height: 50px;
+            background: url(./11.jpg) no-repeat;
+            /* 背景图缩放 */
+            background-size:50px 50px;
+        }
+
+            div:nth-child(3){
+            width: 500px;
+            height: 500px;
+            border: darkgreen 2px solid;
+            background: url(../suning/images/m8.png) no-repeat;
+            /* 等比例放大或者缩小  放大可能导致图片显示不全 */
+            /* background-size: cover; */
+            /* 完全匹配  但不能等比 */
+            /* background-size:50px 50px; */
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <!-- <img src="./111.jpg" alt="">
+    <img src="./11.jpg" alt=""> -->
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
