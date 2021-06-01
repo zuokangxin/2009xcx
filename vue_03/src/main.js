@@ -9,4 +9,4 @@ import vueConfig from '../vue.config'
 
 createApp.use(ElementUI)
 
-createApp(App).use(router).mount("#app")
+createApp(App).use(router).mount("#app")  

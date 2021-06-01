@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    min-width: 320px;
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+    background: #f4f4f4;
+    font: normal 14px/1.5 Tahoma,"Lucida Grande",Verdana,"Microsoft Yahei",STXihei,hei;
+}
+a{
+    text-decoration: none;
+}
+
+.nav{
+    width: 100%;
+    height: 37px;
+    background-color: rgb(255, 133, 42);
+    position: relative;
+}
+.nav .nav-logo{
+    /* width: 100%; */
+    height: 25px;
+    padding: 6px 9px 6px 42px;
+    background: url(../images/下载.png) no-repeat;
+    background-size: 27px 20px;
+    background-position: 9px center;
+    /* position: absolute; */
+}
+.nav .nav-a{
+    display: block;
+    position: absolute;
+    height: 25px;
+    width: 85%;
+    top: 6px;
+    left: 44px;
+    text-align: center;
+    border-radius: 4px;
+    background: rgb(255, 78, 34);
+}
+
+.nav .nav-a .nav-b{
+    position: absolute;
+    height: 25px;
+    line-height: 25px;
+    font-size: 13px;
+    display: inline-block;
+    color: rgb(240, 224, 220);
+    /* background: url(../images/sousuo.png)no-repeat; */
+}
+.daoh{
+    background:url(../images/11111.jpg)no-repeat;
+    width: 100%;
+    height: 120px;
+    background-size:540px 120px;
+}
+
+.miaos{
+    display: flex;
+    width: 100%;
+    height: 156px;
+    flex-direction: row;
+    background-color: #fff;
+}
+.miaos .m-1{
+    width: 20%;
+    height: 156px;
+}
+.miaos .m-1 a{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 61px;
+    height:67px;
+}
+.miaos .m-1 a p{
+    font-size: 11px;
+    line-height: 15px;
+    color: rgb(102,102,102);
+    margin-top: 4px;
+    margin-left: 10px;
+}
+.miaos .m-2{
+    width: 20%;
+    height: 156px;
+}
+.miaos .m-2 a{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 61px;
+    height:67px;
+}
+.miaos .m-2 a p{
+    font-size: 11px;
+    line-height: 15px;
+    color: rgb(102,102,102);
+    margin-top: 4px;
+    margin-left: 10px;
+}
+.miaos .m-3{
+    width: 20%;
+    height: 156px;
+}
+.miaos .m-3 a{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 61px;
+    height:67px;
+}
+.miaos .m-3 a p{
+    font-size: 11px;
+    line-height: 15px;
+    color: rgb(102,102,102);
+    margin-top: 4px;
+    margin-left: 10px;
+}
+.miaos .m-4{
+    width: 20%;
+    height: 156px;
+}
+.miaos .m-4 a{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 61px;
+    height:67px;
+}
+.miaos .m-4 a p{
+    font-size: 11px;
+    line-height: 15px;
+    color: rgb(102,102,102);
+    margin-top: 4px;
+    margin-left: 10px;
+}
+.miaos .m-5{
+    width: 20%;
+    height: 156px;
+}
+.miaos .m-5 a{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 61px;
+    height:67px;
+}
+.miaos .m-5 a p{
+    font-size: 11px;
+    line-height: 15px;
+    color: rgb(102,102,102);
+    margin-top: 4px;
+    margin-left: 10px;
+}
