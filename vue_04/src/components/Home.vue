@@ -3,6 +3,9 @@
     <el-header class="header">
         <!-- <p><img src="../assets/1.png" alt=""></p> -->
         <p class="zi">在线体检预约管理后台</p>
+         <div class="btns">
+           <el-button type="danger" @click="logout">退出</el-button>
+         </div>
     </el-header>
     <el-container>
   <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
@@ -44,12 +47,26 @@
     </el-container>
   </el-container>
 </template>
+<script>
+export default ({
+  methods:{
+    logout(){
+      // 清除token
+      window.sessionStorage.clear()
+      this.$router.push('./login')
+    }
+  }
+})
+</script>
 <style lang="less" scoped>
  .container{
      width: 100%;
      height: 100%;
  }
  .header{
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: space-between;
      position: relative;
      width: 100%;
      height: 260px;
@@ -87,5 +104,8 @@
      top: -5px;
      width: 80px;
      height: 28.83px;
+ }
+ .btns{
+   padding-top: 10px;
  }
 </style>

@@ -29,4 +29,15 @@ const router = createRouter({
   routes
 })
 
+router.beforeEach((to,from,next)=>{
+  // 判断访问的页面如果是登录界面则直放行
+  if(to.path == '/login') return next()
+  // 不是登陆界面 则取token 如果有token则放行 没有 跳转到登陆界面
+  const token = window.sessionStorage.getItem('token')
+  if(!token){
+    return next('/login')
+  }
+  next()
+})
+
 export default router

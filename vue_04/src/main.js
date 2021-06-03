@@ -7,8 +7,7 @@ import './assets/css/common.css';
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
-
-
+axios.defaults.baseURL='/api'
 // createApp(App).use(ElementPlus).use(router).mount('#app')
 const app = createApp(App)
 app.use(ElementPlus)

@@ -76,22 +76,27 @@ export default {
     submitForm(formName) {
       this.$refs[formName].validate((res) => {
         if (res) {
-        //   console.log("登陆成功");
-        //   ElMessage.success({
-        //     message: "恭喜你，这是一条成功消息",
-        //     type: "success",
-        //   });
+          //   console.log("登陆成功");
+          //   ElMessage.success({
+          //     message: "恭喜你，这是一条成功消息",
+          //     type: "success",
+          //   });
 
-        //vue axios 发起网络请求 
-        // this.axios.get('https://www.runoob.com/try/ajax/json_demo.json').then((response)=>{
-        //     console.log(response.data)
-        // })
+          //vue axios 发起网络请求
+          this.axios.post("/user/login", this.form).then((response) => {
+            // console.log(response.data);
+            if (response.data.code == "00000") {
 
-        this.$message.success('登陆成功')
-        this.$router.push('/home')
+              // 把token 存入sessionStorage
+              window.sessionStorage.setItem('token',response.data.token);
+
+              this.$message.success("登陆成功");
+              this.$router.push("/home");
+            }
+          });
         } else {
           console.log("登陆失败");
-          this.$message.error('登陆失败')
+          this.$message.error("登陆失败");
         }
       });
     },
